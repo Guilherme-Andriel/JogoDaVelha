@@ -102,48 +102,14 @@ int main()
  */
 
   int valores[9] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-
+  int cont = 0;
   // Atribuindo os inteiros do array valores na matriz alocada:
   for (int i = 0; i < 3; i++)
   {
     for (int j = 0; j < 3; j++)
     {
-      if (i == 0 && j == 0)
-      {
-        jogo[0][0] = valores[0];
-      }
-      else if (i == 0 && j == 1)
-      {
-        jogo[0][1] = valores[1];
-      }
-      else if (i == 0 && j == 2)
-      {
-        jogo[0][2] = valores[2];
-      }
-      else if (i == 1 && j == 0)
-      {
-        jogo[1][0] = valores[3];
-      }
-      else if (i == 1 && j == 1)
-      {
-        jogo[1][1] = valores[4];
-      }
-      else if (i == 1 && j == 2)
-      {
-        jogo[1][2] = valores[5];
-      }
-      else if (i == 2 && j == 0)
-      {
-        jogo[2][0] = valores[6];
-      }
-      else if (i == 2 && j == 1)
-      {
-        jogo[2][1] = valores[7];
-      }
-      else if (i == 2 && j == 2)
-      {
-        jogo[2][2] = valores[8];
-      }
+     jogo[i][j] = valores[cont];
+     cont++;
     }
   }
 
